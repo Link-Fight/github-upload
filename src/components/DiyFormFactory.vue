@@ -258,11 +258,12 @@ export default {
             let { flag, index } = this.checkVariables(this.variables)
             if (flag) {
                 let confirmResult = 'ok'
-                if (cfg.ajax) {
-                    if (cfg.ajax.confirm) {
-                        let { action } = await this.$showConfirm(cfg.ajax.confirm)
-                        confirmResult = action
-                    }
+                let confirm = cfg.ajax && cfg.ajax.confirm
+                if (confirm) {
+                    let { action } = await this.$showConfirm(confirm)
+                    confirmResult = action
+                }
+                if (cfg.ajax && cfg.ajax.api) {
                     if (confirmResult === 'ok') {
                         this.submitVariables(cfg, this.variables)
                     } else {

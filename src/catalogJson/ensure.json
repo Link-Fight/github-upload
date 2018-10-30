@@ -1,0 +1,17 @@
+[{
+    "type": "LinkCellGroup",
+    "title": "保障",
+    "items": [{
+        "title": "保障 v0.1",
+        "href": "#/ensureForm?isTest=1"
+    }, {
+        "title": "保障入库 v0.1",
+        "href": "#/ensureForm/godownEntry?isTest=1&src=godownEntry"
+    }, {
+        "title": "保障出库 v0.1",
+        "href": "#/ensureForm/godownOut?isTest=1&src=godownOut"
+    }, {
+        "title": "保障出库，保障入库分别是/ensureForm/godownEntry，/ensureForm/godownOut",
+        "subTitle": ["出库(godownEntry)的物料选择是多选的，入库(godownOut)是单选的", "设置物料的MAX属性可以控制数量"]
+    }]
+}]

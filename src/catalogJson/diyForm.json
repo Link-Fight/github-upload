@@ -1,0 +1,60 @@
+[{
+    "type": "LinkCell",
+    "title": "表单:diyForm",
+    "subTitle": ["第一遍实现,完成require属性的实现", "添加 v3 的 diy_form_guid 属性 ，来实现表单的自动保存", "添加needRequireTip<Boolean>属性来设置表单是否显示必填的标记，默认是true"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "dateSelect:时间选择",
+    "subTitle": ["viewMode:[year/month/day/hour/minute]", "2018/4/12 更新样式"],
+    "href": "#/diyForm?isTest=1&src=dateSelect"
+}, {
+    "type": "LinkCell",
+    "title": "text:输入单行文字",
+    "subTitle": ["dateType:[init/float/string]", "2018/4/19 更新"],
+    "href": "#/diyForm?isTest=1&src=text"
+}, {
+    "type": "LinkCell",
+    "title": "imgUpload:添加gps:<Boolean>，gpsCascade:<String>属性",
+    "subTitle": ["gps属性用来实时判断用户第一张上传的图片是否有gps信息", "gpsCascade属性用在，在gps:true前提下，拿到gps修改信息后{id,address,lat,lng,name}赋值到latLng控件去(为空的前提下)"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "添加score,让用户选择星星来评价",
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "添加dropdown,让用户选择",
+    "subTitle": "配置与radio雷同",
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "text: dateType属性生效 [string/int/float] 用来指定输入字符串，整数，浮点数(默认两位、Fixed:2)",
+    "subTitle": ["表单控件:拿来输入", "2018/3/25"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "select: 加载的列表也支持加载更多了  queryApi统一放到config的字层",
+    "subTitle": ["表单控件:拿来选择项，数据源是异步请求，可以多选，单选", "min、max：在多选时，限制选择数量", "2018/3/25"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "select: 列表项body:[{avatar、txt、subTitle、color}] 新加了{subTitle、color}属性",
+    "subTitle": ["2018/3/27"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "slider:中max,min去掉模拟数据后，属性可以正常工作了",
+    "subTitle": ["表单控件:选择某个范围的数值，range属性来指定选择是一个值，还是个值区间{range:true}", "2018/3/25"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "radio:中options去掉模拟数据后，属性可以正常工作了",
+    "subTitle": ["表单控件:让用户在多个值之间做出单选", "2018/3/25"],
+    "href": "#/diyForm?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "area:{multiple:Boolean}将决定是多选还是单选，但是无论多选，单选提交的值都是数组",
+    "subTitle": ["表单控件:让用户选择地区", "multiple:单选(默认)，多选", "min、max：在多选时，限制选择数量", "leval:限制选择的深度", "2018/3/25"],
+    "href": "#/diyForm?isTest=1"
+}]

@@ -1,0 +1,116 @@
+{
+  "diy_form_guid": "apply_demand",
+  "items": [{
+      "type": "title",
+      "title": "申请内容"
+    },
+    {
+      "items": [{
+          "txt": "需求",
+          "value": "测试统计"
+        },
+        {
+          "txt": "作物",
+          "value": "棉花"
+        },
+        {
+          "txt": "地区",
+          "value": "广东省/广州市/天河区"
+        }
+      ],
+      "type": "InfoListItem",
+      "title": ""
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "multiple": false,
+      "src": {
+        "params": {
+          "id": 34
+        },
+        "url": "/wechat/farmingsrv/application/select_team"
+      },
+      "type": "select",
+      "variable": "team",
+      "label": "选择团队",
+      "require": true,
+      "placeholder": "请选择"
+    },
+    {
+      "multiple": false,
+      "src": {
+        "url": "/wechat/farmingsrv/application/select_cars"
+      },
+      "type": "select",
+      "variable": "car_type",
+      "label": "参与车辆类型",
+      "require": true
+    },
+    {
+      "dataType": "integer",
+      "type": "text",
+      "variable": "car_count",
+      "label": "可参与车辆数量",
+      "require": true
+    },
+    {
+      "dataType": "integer",
+      "type": "text",
+      "variable": "aircraft_count",
+      "label": "可参与飞机数量",
+      "require": true,
+      "showRule": {
+        "show": {
+          "fn": "team",
+          "immediateClear": true,
+          "items": [{
+            "control_id": "team"
+          }]
+        },
+        "key": "aircraft_count"
+      }
+    },
+    {
+      "dataType": "integer",
+      "type": "text",
+      "variable": "actor_count",
+      "label": "可参与人员数量",
+      "require": true,
+      "showRule": {
+        "show": {
+          "fn": "team",
+          "immediateClear": true,
+          "items": [{
+            "control_id": "team"
+          }]
+        },
+        "key": "actor_count"
+      }
+    },
+    {
+      "type": "title",
+      "title": "申请原因"
+    },
+    {
+      "type": "textarea",
+      "variable": "description",
+      "require": true,
+      "placeholder": "请填写申请理由"
+    },
+    {
+      "txt": "提交",
+      "type": "submit",
+      "ajax": {
+        "api": "/wechat/farmingsrv/application/save?guid=7470C49874A413E33E958CACEEE01790&invirer_guid=",
+        "confirm": "确定要提交吗? "
+      },
+      "href": {
+        "url": "/pm/v4/#/orderDetail?src=/wechat/farmingsrv/home/detail&params=%7b%22guid%22%3a%227470C49874A413E33E958CACEEE01790%22%7d"
+      }
+    }
+  ],
+  "title": "申请页面"
+}

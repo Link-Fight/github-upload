@@ -1,0 +1,46 @@
+[{
+    "type": "LinkCellGroup",
+    "items": [{
+        "title": "设备列表",
+        "value": "模板:diyList",
+        "color": "#42bd56",
+        "subTitle": ["添加了{type:DeviceListItem} 设备列表项", "floatBtns支持配置items来展开多个按钮", "按钮配置：btn，添加{action:\"SCAN\"}来支持扫一扫"],
+        "href": "#/diyList?isTest=1"
+    }, {
+        "title": "设备主页",
+        "value": "mainDevice",
+        "color": "#42bd56",
+        "subTitle": ["类似mainIndex，作为其他页面的容器"],
+        "href": "#/mainDevice?isTest=1"
+    }, {
+        "title": "设备激活",
+        "value": "deviceActive",
+        "color": "#42bd56",
+        "href": "#/deviceActive?isTest=1"
+    }, {
+        "title": "设备绑定",
+        "value": "deviceBind",
+        "color": "#42bd56",
+        "href": "#/deviceBind?isTest=1"
+    }, {
+        "title": "设备管理者",
+        "value": "deviceUser",
+        "color": "#42bd56",
+        "href": "#/deviceUser?isTest=1"
+    }, {
+        "title": "无忧计划购买",
+        "value": "buyDetail",
+        "color": "#42bd56",
+        "href": "#/buyDetail?isTest=1&src=safeguard&session=1"
+    }, {
+        "title": "保险购买",
+        "value": "buyDetail",
+        "color": "#42bd56",
+        "href": "#/buyDetail?isTest=1&src=insurance&session=1"
+    }, {
+        "title": "保险续保",
+        "value": "buyDetail",
+        "color": "#42bd56",
+        "href": "#/buyDetail?isTest=1&src=insuranced&session=1"
+    }]
+}]

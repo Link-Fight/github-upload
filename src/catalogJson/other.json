@@ -1,0 +1,127 @@
+[{
+    "type": "LinkCellGroup",
+    "title": "与小程序交互",
+    "items": [{
+        "title": "v4页面跳到小程序页面",
+        "subTitle": ["适用范围：", "diyForm、diyDetail", "在跳转的href上加上 mini:", "例如要跳到 小程序的/pages/order/baseDetail?uuid=8737e134-1b72-4c00-9114-a25131f2c0de", "就要变成mini:/pages/order/baseDetail?uuid=8737e134-1b72-4c00-9114-a25131f2c0de"],
+        "href1": "#/voncosle"
+    }]
+}, {
+    "type": "LinkCellGroup",
+    "title": "diyDoc",
+    "items": [{
+        "title": "应用 v0.1",
+        "href": "#/application?isTest=1"
+    }, {
+        "title": "我的 v0.1",
+        "href": "#/user?isTest=1"
+    }, {
+        "title": "保障 v0.1",
+        "href": "#/ensureForm?isTest=1"
+    }, {
+        "title": "保障入库 v0.1",
+        "href": "#/ensureForm/godownEntry?isTest=1&src=godownEntry"
+    }, {
+        "title": "保障出库 v0.1",
+        "href": "#/ensureForm/godownOut?isTest=1&src=godownOut"
+    }, {
+        "title": "保障出库，保障入库分别是/ensureForm/godownEntry，/ensureForm/godownOut",
+        "subTitle": ["出库(godownEntry)的物料选择是多选的，入库(godownOut)是单选的", "设置物料的MAX属性可以控制数量"]
+    }, {
+        "title": "文档+分享",
+        "href": "#/diyDoc?isTest=1"
+    }, {
+        "title": "文档+分享 link",
+        "href": "#/diyDoc?isTest=1&src=link"
+    }, {
+        "title": "文档+分享 imgUrl",
+        "href": "#/diyDoc?isTest=1&src=imgUrl"
+    }]
+}, {
+    "type": "LinkCellGroup",
+    "title": "",
+    "items": [{
+        "title": "地图",
+        "href": "#/map?src=%2Fwechat%2Fmars%2Fmap%2Fdetail&params=%7B%22guid%22%3A%22cceda39a-541f-4aae-92f8-c1e20a0d42b5%22%7D"
+    }, {
+        "title": "地图",
+        "subTitle": "将包括定点航线",
+        "href": "#/map?src=%2Fwechat%2Ffarming%2Fmanage%2Fmap_detail&params=%7B%22guid%22%3A%2207c19503-bc8f-4514-90d7-9f878621cad6%22%7D"
+    }, {
+        "title": "主页",
+        "subTitle": "底部的tab添加 activeicon属性 指明当需要激活该tab时候 显示的图标",
+        "value": "",
+        "href": "#/main?isTest=1"
+    }, {
+        "title": "作业",
+        "subTitle": "Task 可以对接",
+        "value": "100%",
+        "href": "#/task?isTest=1"
+    }, {
+        "title": "按钮：btns 添加{bg,color}设置",
+        "subTitle": "前端定义并且实现",
+        "value": "",
+        "href": ""
+    }]
+}, {
+    "type": "title",
+    "title": "其他页面"
+}, {
+    "type": "LinkCellGroup",
+    "items": [{
+        "title": "统计 #/statistics :模板：diyDetail",
+        "subTitle": ["通过在url地址上添加&time=2018-9-1 来指定默认选择的时间,内嵌到main的暂不支持"],
+        "value": "100%",
+        "href": "#/statistics?isTest=1&title=刘波"
+    }, {
+        "title": "二维码 #/qrcode?isTest=1",
+        "subTitle": ["对接完成", "2018/3/16"],
+        "value": "100%",
+        "href": "#/qrcode?isTest=1"
+    }, {
+        "title": "农事分享二维码 #/farmingQr?isTest=1",
+        "subTitle": "添加 floatTip 指示第一次进入页面的提示",
+        "value": "100%",
+        "href": "#/farmingQr?isTest=1"
+    }, {
+        "title": "加入页面 #/join?isTest=1",
+        "subTitle": "2018/03/20",
+        "value": "100%",
+        "href": "#/join?isTest=1"
+    }, {
+        "title": "记录列表 #/infoList?isTest=1",
+        "value": "",
+        "href": "#/infoList?isTest=1"
+    }]
+}, {
+    "type": "title",
+    "title": "订单"
+}, {
+    "type": "LinkCellGroup",
+    "items": [{
+        "title": "订单列表 #/orderList  模板:diyList",
+        "value": "100%",
+        "href": "#/orderList?isTest=1"
+    }]
+}, {
+    "type": "title",
+    "title": "团队"
+}, {
+    "type": "LinkCellGroup",
+    "title": "",
+    "items": [{
+        "title": "团队信息？ #/team",
+        "subTitle": "正在还原设计",
+        "value": "80%",
+        "href": "#/team"
+    }, {
+        "title": "团队列表 #/teamList?isTest=1 模板:diyList",
+        "subTitle": "对接完毕",
+        "href": "#/teamList?isTest=1"
+    }, {
+        "title": "团队信息修改 #/teamInfoForm?isTest=1  模板：DetailForm",
+        "subTitle": ["添加功能: 可以修改头像、文字", "2018/3/17"],
+        "value": "100%",
+        "href": "#/teamInfoForm?isTest=1"
+    }]
+}]

@@ -1,0 +1,36 @@
+[{
+    "type": "LinkCellGroup",
+    "items": [{
+            "title": "表单",
+            "href": "#/?diyForm"
+        },
+        {
+            "title": "详情",
+            "href": "#/?diyDetail"
+        },
+        {
+            "title": "列表",
+            "href": "#/?diyList"
+        },
+        {
+            "title": "设备",
+            "href": "#/?device"
+        },
+        {
+            "title": "发票相关",
+            "href": "#/?bill"
+        },
+        {
+            "title": "地址信息",
+            "href": "#/address/list"
+        },
+        {
+            "title": "保障",
+            "href": "#/?ensure"
+        },
+        {
+            "title": "其他",
+            "href": "#/?other"
+        }
+    ]
+}]

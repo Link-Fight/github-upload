@@ -1,0 +1,28 @@
+[{
+        "type": "LinkCellGroup",
+        "items": [{
+            "title": "发票抬头列表",
+            "subTitle": "#/billInfo/headerlist",
+            "href": "#/billInfo/headerlist"
+        }]
+    },
+    {
+        "type": "LinkCellGroup",
+        "flod": false,
+        "title": "开具发票流程",
+        "items": [{
+                "title": "url参数说明",
+                "subTitle": ["needBillType=0:表示只有纸质发票", "action=appendInfo:表示是补充流程"]
+            }, {
+                "title": "完整流程",
+                "subTitle": ["四个tab", "#/billInfo/workflow?isTest=1"],
+                "href": "#/billInfo/workflow?isTest=1"
+            },
+            {
+                "title": "补充流程",
+                "subTitle": ["三个tab", "#/billInfo/workflow?isTest=1&action=appendInfo"],
+                "href": "#/billInfo/workflow?isTest=1&action=appendInfo"
+            }
+        ]
+    }
+]

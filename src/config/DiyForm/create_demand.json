@@ -1,0 +1,281 @@
+{
+  "diy_form_guid": "create_demand",
+  "variables": {
+    "flight_switch": false,
+    "cert_team_need": false,
+    "publish_to": "1",
+    "height": [
+      0,
+      15
+    ],
+    "speed": [
+      0,
+      8
+    ]
+  },
+  "items": [{
+      "dataType": "string",
+      "type": "text",
+      "variable": "title",
+      "label": "需求名称",
+      "require": true,
+      "placeholder": "请填写需求名称"
+    },
+    {
+      "multiple": false,
+      "src": {
+        "url": "/wechat/farmingsrv/demand/select_crop"
+      },
+      "type": "select",
+      "variable": "crops",
+      "label": "农作物",
+      "require": true,
+      "placeholder": "选作物"
+    },
+    {
+      "dataType": "integer",
+      "unit": "亩",
+      "type": "text",
+      "variable": "total_operating_area",
+      "label": "作业面积",
+      "require": true,
+      "placeholder": "请填写作业面积"
+    },
+    {
+      "dataType": "float",
+      "unit": "元",
+      "type": "text",
+      "variable": "price",
+      "label": "每亩价格",
+      "require": true,
+      "placeholder": "请填写每亩价格"
+    },
+    {
+      "viewMode": "hour",
+      "type": "dateSelect",
+      "variable": "start_time",
+      "label": "开始时间",
+      "require": true
+    },
+    {
+      "viewMode": "hour",
+      "type": "dateSelect",
+      "variable": "end_time",
+      "label": "结束时间",
+      "require": true
+    },
+    {
+      "type": "latLng",
+      "variable": "address",
+      "label": "作业地址",
+      "require": true,
+      "placeholder": "请选择地址"
+    },
+    {
+      "type": "title",
+      "title": "农田现场照片"
+    },
+    {
+      "sizeType": "original",
+      "type": "imgUpload",
+      "variable": "pics",
+      "label": "农田现场照片"
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "options": [{
+          "value": "1",
+          "label": "需求大厅（公开）"
+        },
+        {
+          "value": "2",
+          "label": "联盟"
+        }
+      ],
+      "type": "radio",
+      "variable": "publish_to",
+      "mode": "view",
+      "label": "发布到"
+    },
+    {
+      "type": "LinkCell",
+      "subTitle": "发布到需求大厅后，所有人可看到需求",
+      "showRule": {
+        "show": {
+          "fn": "publish_to",
+          "items": [{
+            "control_id": "publish_to",
+            "value": [
+              "1"
+            ]
+          }]
+        }
+      }
+    },
+    {
+      "multiple": false,
+      "src": {
+        "url": "/wechat/farmingsrv/demand/select_league"
+      },
+      "type": "select",
+      "variable": "league",
+      "label": "选择联盟",
+      "require": true,
+      "placeholder": "请选择",
+      "showRule": {
+        "show": {
+          "fn": "publish_to",
+          "immediateClear": true,
+          "items": [{
+            "control_id": "publish_to",
+            "value": [
+              "2"
+            ]
+          }]
+        },
+        "key": "league"
+      }
+    },
+    {
+      "type": "switch",
+      "variable": "cert_team_need",
+      "label": "只有认证团队才能申请加入需求",
+      "showRule": {
+        "show": {
+          "fn": "publish_to",
+          "immediateClear": true,
+          "items": [{
+            "control_id": "publish_to",
+            "value": [
+              "2"
+            ]
+          }]
+        },
+        "key": "cert_team_need"
+      }
+    },
+    {
+      "type": "title",
+      "title": "提供条件"
+    },
+    {
+      "type": "switch",
+      "variable": "has_work_meal",
+      "label": "提供工作餐"
+    },
+    {
+      "type": "switch",
+      "variable": "has_home",
+      "label": "提供住宿"
+    },
+    {
+      "type": "switch",
+      "variable": "has_charge",
+      "label": "提供电池充电"
+    },
+    {
+      "type": "switch",
+      "variable": "has_logsvc",
+      "label": "提供后勤服务"
+    },
+    {
+      "type": "switch",
+      "variable": "has_pesticide",
+      "label": "需求方包药"
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "switch",
+      "variable": "open_phone",
+      "tips": "未开启情况下，仅需求参与人可以看到手机号",
+      "label": "对外显示我的手机号"
+    },
+    {
+      "type": "switch",
+      "variable": "data_safe_mode",
+      "tips": "未开启情况下，仅需求参与人可以查看作业数据",
+      "label": "对外公开作业数据"
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "switch",
+      "variable": "flight_switch",
+      "label": "作业要求"
+    },
+    {
+      "isRange": true,
+      "min": 0,
+      "max": 15,
+      "unit": " m",
+      "type": "slider",
+      "variable": "height",
+      "label": "飞行高度（米）",
+      "showRule": {
+        "show": {
+          "fn": "flight_switch",
+          "immediateClear": false,
+          "items": [{
+            "control_id": "flight_switch",
+            "value": [
+              "1",
+              true,
+              "true"
+            ]
+          }]
+        },
+        "key": "height"
+      }
+    },
+    {
+      "isRange": true,
+      "min": 0,
+      "max": 8,
+      "unit": " m/s",
+      "type": "slider",
+      "variable": "speed",
+      "label": "飞行速度（米/秒）",
+      "showRule": {
+        "show": {
+          "fn": "flight_switch",
+          "immediateClear": false,
+          "items": [{
+            "control_id": "flight_switch",
+            "value": [
+              "1",
+              true,
+              "true"
+            ]
+          }]
+        },
+        "key": "speed"
+      }
+    },
+    {
+      "type": "title",
+      "title": "备注说明"
+    },
+    {
+      "type": "textarea",
+      "variable": "description",
+      "placeholder": "防治内容、结算周期等信息"
+    },
+    {
+      "txt": "创建需求",
+      "type": "submit",
+      "ajax": {
+        "api": "/wechat/farmingsrv/demand/save?guid=",
+        "confirm": "确定要创建吗? "
+      }
+    }
+  ],
+  "title": "创建需求"
+}

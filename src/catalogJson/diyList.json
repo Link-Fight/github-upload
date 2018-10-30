@@ -1,0 +1,38 @@
+[{
+    "type": "LinkCellGroup",
+    "items": [{
+        "title": "添加设备列表项",
+        "value": "DeviceListItem",
+        "color": "#42bd56",
+        "subTitle": ["添加了{type:DeviceListItem}", "用来在列表中显示设备"],
+        "href": "#/diyList?isTest=1"
+    }, {
+        "title": "floatBtns支持items",
+        "value": "floatBtns",
+        "color": "#42bd56",
+        "subTitle": ["floatBtns可以配置展开显示更多功能按钮", "可以配置扫一扫,输入序列号"],
+        "href": "#/diyList?isTest=1"
+    }, {
+        "title": "筛选在顶部并且没有搜索功能  模板:diyList",
+        "subTitle": "headerType=\"searchHeader\"",
+        "href": "#/diyList?isTest=1&params=%7B\"header\"%3A\"filterHeader\"%7D"
+    }]
+}, {
+    "type": "LinkCellGroup",
+    "items": [{
+        "type": "LinkCell",
+        "title": "模板:diyList 筛选功能",
+        "subTitle": "前端定义并且实现",
+        "value": "",
+        "href": ""
+    }, {
+        "type": "LinkCell",
+        "title": "模板:diyList 普通的头部 加 各种列表项目的集合",
+        "subTitle": ["悬浮于右下角的按钮config:{floatBtns:[]} 最好是一个", "添加floatTip来设置引导文档按钮的说明，位置固定于右上角，记得搭配显示文档说明按钮{action:DOC}使用，仅该页面第一次打开有(按页面地址来算)"],
+        "href": "#/diyList?isTest=1"
+    }]
+}, {
+    "type": "LinkCell",
+    "title": "团队列表 #/teamList?isTest=1 模板:diyList",
+    "href": "#/teamList?isTest=1"
+}]

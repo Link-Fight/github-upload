@@ -1,0 +1,61 @@
+[{
+    "type": "LinkCellGroup",
+    "items": [{
+        "title": "图表{type:chart} 中添加地图",
+        "subTitle": ["指定{type: \"chart\", title:\"\", config:{ color:[], type:\"map\",geo:\"china\",datas:[]}}", "geo:默认是设置china，目前可以设置到省一级如\"guangdong\"", "datas:对象数组 {name:\"新疆\",value:123}"],
+        "href": "#/statistics?isTest=1&src=farming"
+    }, {
+        "title": "调用微信地图打开位置信息 LocInfo",
+        "subTitle": ["{lat,lng,address}"],
+        "href": "#/diyDetail?isTest=1&src=farming"
+    }, {
+        "title": "图文并茂的 dataShow",
+        "subTitle": ["拿来显示多段文字，多张图片，以及些状态", "2018/04/24"],
+        "href": "#/diyDetail?isTest=1&src=dataShow"
+    }, {
+        "title": "农事定制:LinkImgInfo",
+        "subTitle": ["拿来显示多个头像，以及简短的介绍文字", "{type,imgs:<Array>,title,href}", "2018/04/11"],
+        "href": "#/orderDetail?isTest=1&src=farming"
+    }, {
+        "title": "table增加打电话能力",
+        "subTitle": ["关键字\"_PHONE\",部署在第一行的某列，然后下面的行，同列的将渲染成电话", "2018/04/11"],
+        "href": "#/orderDetail?isTest=1&src=farming"
+    }, {
+        "title": "添加score",
+        "subTitle": ["{type,title,value}", "2018/4/10"]
+    }, {
+        "title": "添加了tab，以及控制显示、异步加载的实现",
+        "subTitle": "2018/3/19 12:34"
+    }, {
+        "title": "title、 more、StatisticeCells、LinkCellForTxt、LinkCellGroup、LinkCellForImg、LinkCellForImgGroup",
+        "subTitle": "2018/3/14"
+    }]
+}, {
+    "type": "LinkCell",
+    "title": "添加了images，轮播图 来显示多张大图",
+    "subTitle": ["添加autoPlay控制是否自动切换图片 2018/3/27", "添加title,subTitle", "2018/3/20 15:34"]
+}, {
+    "type": "LinkCell",
+    "title": "模板: DiyDetail 参考例子:农事服务 ",
+    "href": "#/orderDetail?isTest=1&src=farming"
+}, {
+    "type": "LinkCell",
+    "title": "FarmingInfo：农事服务专属",
+    "subTitle": ["DiyDetail 控件", "添加{statu:{title,color}}", "2018/3/26"],
+    "href": "#/orderDetail?isTest=1"
+}, {
+    "title": "订单详情 #/orderDetail  模板:diyDetail",
+    "subTitle": "等待对接",
+    "value": "100%",
+    "href": "#/orderDetail?isTest=1"
+}, {
+    "title": "团队详情 #/teamDetail?isTest=1 :模板：diyDetail",
+    "subTitle": "对接完毕",
+    "value": "100%",
+    "href": "#/teamDetail?isTest=1"
+}, {
+    "type": "LinkCell",
+    "title": "模板: DiyDetail",
+    "subTitle": ["添加floatTip来设置顶部按钮的操作提示，现在是固定第一个按钮，仅该页面第一次打开有(按页面地址来算)"],
+    "href": "#/orderDetail?isTest=1"
+}]
